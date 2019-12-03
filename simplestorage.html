@@ -67,7 +67,7 @@ function getLink(addr) {
 
 function getValue() {
   simpleStorage.get(function(e,r){
-    document.getElementById('storedData').innerHTML=r.toNumber();
+    document.getElementById('rate').innerHTML=r.toNumber();
 
   });
   web3.eth.getBlockNumber(function(e,r){
