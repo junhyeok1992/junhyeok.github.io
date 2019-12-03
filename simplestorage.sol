@@ -12,25 +12,30 @@ contract COFFIX {
     uint rate;
     
     function set_1(uint a) {
-        rate = a;
+        Data_1 = a;
     }
     
-        function set_2(uint b) {
+    function set_2(uint b) {
         Data_2 = b;
     }
     
-        function set_3(uint c) {
+    function set_3(uint c) {
         Data_3 = c;
     }
     
-        function set_4(uint d) {
+    function set_4(uint d) {
         Data_4 = d;
     }
 
     function set_5(uint e) {
         Data_5 = e;
     }
+
+    function avg(uint a,uint b,uint c,uint d,uint e) {
+        rate = (Data_1+Data_2+Data_3+Data_4+Data_5)/5;
+    }
  
+
     function get() constant returns (uint) {
         rate;
         return rate;
