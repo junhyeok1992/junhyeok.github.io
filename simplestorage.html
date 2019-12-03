@@ -8,13 +8,8 @@
   <style>
     body {margin-left:50px;}
     #rate {font-size:300%; margin-right:10px;}
-    #new1Value {width: 150px; margin-right:5px; text-align:right;}
-    #new2Value {width: 150px; margin-right:5px; text-align:right;}
-    #new3Value {width: 150px; margin-right:5px; text-align:right;}
-    #new4Value {width: 150px; margin-right:5px; text-align:right;}
-    #new5Value {width: 150px; margin-right:5px; text-align:right;}
+    #newValue {width: 150px; margin-right:5px; text-align:right;}
 
-  
   
   </style>
 </head>
@@ -85,7 +80,7 @@ function getValue() {
 
 function set_1Value() {
 
-  var new1Value = document.getElementById('new1Value').value;
+  var newValue = document.getElementById('newValue').value;
   var txid
   simpleStorage.set_1(new1Value, function(e,r){
     document.getElementById('result').innerHTML = 'Transaction id: ' + r + '<span id="pending" style="color:red;">(Pending)</span>';
@@ -108,7 +103,7 @@ function set_1Value() {
 
 function set_2Value() {
 
-  var new2Value = document.getElementById('new2Value').value;
+  var newValue = document.getElementById('newValue').value;
   var txid
   simpleStorage.set_2(new2Value, function(e,r){
     document.getElementById('result').innerHTML = 'Transaction id: ' + r + '<span id="pending" style="color:red;">(Pending)</span>';
@@ -131,7 +126,7 @@ function set_2Value() {
 
 function set_3Value() {
 
-  var new3Value = document.getElementById('new3Value').value;
+  var newValue = document.getElementById('newValue').value;
   var txid
   simpleStorage.set_3(new3Value, function(e,r){
     document.getElementById('result').innerHTML = 'Transaction id: ' + r + '<span id="pending" style="color:red;">(Pending)</span>';
@@ -153,7 +148,7 @@ function set_3Value() {
 
 function set_4Value() {
 
-  var new4Value = document.getElementById('new4Value').value;
+  var newValue = document.getElementById('newValue').value;
   var txid
   simpleStorage.set_4(new4Value, function(e,r){
     document.getElementById('result').innerHTML = 'Transaction id: ' + r + '<span id="pending" style="color:red;">(Pending)</span>';
@@ -175,7 +170,7 @@ function set_4Value() {
 
 function set_5Value() {
 
-  var new5Value = document.getElementById('new5Value').value;
+  var newValue = document.getElementById('newValue').value;
   var txid
   simpleStorage.set_5(new5Value, function(e,r){
     document.getElementById('result').innerHTML = 'Transaction id: ' + r + '<span id="pending" style="color:red;">(Pending)</span>';
