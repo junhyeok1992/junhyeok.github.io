@@ -31,13 +31,8 @@ contract COFFIX {
         Data_5 = e;
     }
  
-    function avg(uint a,uint b,uint c,uint d,uint e) {
-        rate = (Data_1+Data_2+Data_3+Data_4+Data_5)/5;
-    }
- 
-
     function get() constant returns (uint) {
-        rate;
+        rate=(Data_1+Data_2+Data_3+Data_4+Data_5)/5;
         return rate;
     }
 
